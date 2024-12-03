@@ -1,0 +1,154 @@
+<html>
+<body>
+<pre>
+<h1>礦ision Build Log</h1>
+<h2>Tool Versions:</h2>
+IDE-Version: μVision V5.26.2.0
+Copyright (C) 2018 ARM Ltd and ARM Germany GmbH. All rights reserved.
+License Information: a Lenovo, hit, LIC=WHYH9-4EK64-HLMCL-0D9CS-W2ZWR-ARLXT
+ 
+Tool Versions:
+Toolchain:       MDK-ARM Plus  Version: 5.26.2.0
+Toolchain Path:  C:\Keil_v5\ARM\ARMCC\Bin
+C Compiler:      Armcc.exe V5.06 update 6 (build 750)
+Assembler:       Armasm.exe V5.06 update 6 (build 750)
+Linker/Locator:  ArmLink.exe V5.06 update 6 (build 750)
+Library Manager: ArmAr.exe V5.06 update 6 (build 750)
+Hex Converter:   FromElf.exe V5.06 update 6 (build 750)
+CPU DLL:         SARMCM3.DLL V5.26.2.0
+Dialog DLL:      DCM.DLL V1.17.2.0
+Target DLL:      STLink\ST-LINKIII-KEIL_SWO.dll V3.0.5.0
+Dialog DLL:      TCM.DLL V1.36.1.0
+ 
+<h2>Project:</h2>
+D:\sensetime\Code\Flash_write_read _screem\MDK-ARM\pianoCtr.uvprojx
+Project File Date:  10/31/2024
+
+<h2>Output:</h2>
+*** Using Compiler 'V5.06 update 6 (build 750)', folder: 'C:\Keil_v5\ARM\ARMCC\Bin'
+Rebuild target 'pianoCtr'
+assembling startup_stm32f407xx.s...
+compiling main.c...
+../Core/Inc/usart.h(45): warning:  #1295-D: Deprecated declaration USART1_DATA_update - give arg types
+  void USART1_DATA_update();
+../app/app_piano/app_piano.h(47): warning:  #1295-D: Deprecated declaration processReceivedData - give arg types
+  void processReceivedData();
+../Core/Src/main.c: 2 warnings, 0 errors
+compiling tim.c...
+compiling gpio.c...
+compiling dma.c...
+compiling stm32f4xx_it.c...
+../Core/Inc/usart.h(45): warning:  #1295-D: Deprecated declaration USART1_DATA_update - give arg types
+  void USART1_DATA_update();
+../Core/Src/stm32f4xx_it.c: 1 warning, 0 errors
+compiling usart.c...
+../Core/Inc/usart.h(45): warning:  #1295-D: Deprecated declaration USART1_DATA_update - give arg types
+  void USART1_DATA_update();
+../Core/Src/usart.c: 1 warning, 0 errors
+compiling i2c.c...
+compiling stm32f4xx_hal_rcc.c...
+compiling stm32f4xx_hal_i2c_ex.c...
+compiling stm32f4xx_hal_i2c.c...
+compiling spi.c...
+compiling stm32f4xx_hal_timebase_tim.c...
+compiling stm32f4xx_hal_msp.c...
+compiling stm32f4xx_hal_rcc_ex.c...
+compiling stm32f4xx_hal_flash_ramfunc.c...
+compiling stm32f4xx_hal_flash.c...
+compiling stm32f4xx_hal_dma_ex.c...
+compiling stm32f4xx_hal_gpio.c...
+compiling stm32f4xx_hal_flash_ex.c...
+compiling stm32f4xx_hal_dma.c...
+compiling stm32f4xx_hal_pwr.c...
+compiling stm32f4xx_hal_cortex.c...
+compiling stm32f4xx_hal.c...
+compiling stm32f4xx_hal_pwr_ex.c...
+compiling stm32f4xx_hal_exti.c...
+compiling stm32f4xx_hal_uart.c...
+compiling stm32f4xx_hal_tim_ex.c...
+compiling stm32f4xx_hal_tim.c...
+compiling Flash.c...
+../Core/Inc/usart.h(45): warning:  #1295-D: Deprecated declaration USART1_DATA_update - give arg types
+  void USART1_DATA_update();
+..\BSP\Flash\Flash.c(55): warning:  #177-D: variable "received_file_id"  was declared but never referenced
+      uint8_t received_file_id = buf[8];  // 文件标识符
+..\BSP\Flash\Flash.c: 2 warnings, 0 errors
+compiling system_stm32f4xx.c...
+compiling stm32f4xx_hal_spi.c...
+compiling MCU_BSP.c...
+../Core/Inc/usart.h(45): warning:  #1295-D: Deprecated declaration USART1_DATA_update - give arg types
+  void USART1_DATA_update();
+..\BSP\MCU_BSP\MCU_BSP.c: 1 warning, 0 errors
+compiling fonts.c...
+compiling ST7735.c...
+../Core/Inc/usart.h(45): warning:  #1295-D: Deprecated declaration USART1_DATA_update - give arg types
+  void USART1_DATA_update();
+..\BSP\TFT\ST7735.c: 1 warning, 0 errors
+compiling PCA9685.c...
+compiling oled.c...
+compiling app_piano.c...
+../Core/Inc/usart.h(45): warning:  #1295-D: Deprecated declaration USART1_DATA_update - give arg types
+  void USART1_DATA_update();
+..\app\app_piano\app_piano.h(47): warning:  #1295-D: Deprecated declaration processReceivedData - give arg types
+  void processReceivedData();
+..\app\app_piano\app_piano.c(127): warning:  #177-D: variable "PlaySpeed"  was declared but never referenced
+      float PlaySpeed = 1;
+..\app\app_piano\app_piano.c(128): warning:  #177-D: variable "PWM_Type"  was declared but never referenced
+  		uint8_t PWM_Type = (uint16_t)midi_buf[NOTE_TYPE];
+..\app\app_piano\app_piano.c(354): warning:  #550-D: variable "PWM_Duty"  was set but never used
+      float PWM_Duty = 0;
+..\app\app_piano\app_piano.c(458): warning:  #177-D: variable "i"  was declared but never referenced
+  	int i = 0;
+..\app\app_piano\app_piano.c: 6 warnings, 0 errors
+compiling stepper_motor.c...
+..\Control\StepperMotor\stepper_motor.c(26): warning:  #1035-D: single-precision operand implicitly converted to double-precision
+      n = (int)(angle / (1.8 / subdivide));
+..\Control\StepperMotor\stepper_motor.c: 1 warning, 0 errors
+compiling Key.c...
+../Core/Inc/usart.h(45): warning:  #1295-D: Deprecated declaration USART1_DATA_update - give arg types
+  void USART1_DATA_update();
+../app/app_piano/app_piano.h(47): warning:  #1295-D: Deprecated declaration processReceivedData - give arg types
+  void processReceivedData();
+..\BSP\Key\Key.c(137): warning:  #111-D: statement is unreachable
+              HAL_Delay(200);
+..\BSP\Key\Key.c(210): warning:  #1-D: last line of file ends without a newline
+  */
+..\BSP\Key\Key.c: 4 warnings, 0 errors
+compiling TASK.c...
+..\Control\TASK\TASK.c(48): warning:  #1035-D: single-precision operand implicitly converted to double-precision
+                  PCA9685_PWM_Set(j, 0.125 - PWM_Duty);
+..\Control\TASK\TASK.c(88): warning:  #177-D: variable "Count"  was declared but never referenced
+      uint16_t Count = 20;
+..\Control\TASK\TASK.c(152): warning:  #1-D: last line of file ends without a newline
+  }
+..\Control\TASK\TASK.c: 3 warnings, 0 errors
+linking...
+Program Size: Code=22424 RO-data=4276 RW-data=32 ZI-data=10792  
+FromELF: creating hex file...
+"pianoCtr\pianoCtr.axf" - 0 Error(s), 22 Warning(s).
+
+<h2>Software Packages used:</h2>
+
+Package Vendor: ARM
+                http://www.keil.com/pack/ARM.CMSIS.5.4.0.pack
+                ARM.CMSIS.5.4.0
+                CMSIS (Cortex Microcontroller Software Interface Standard)
+   * Component: CORE Version: 5.1.2
+
+Package Vendor: Keil
+                http://www.keil.com/pack/Keil.STM32F4xx_DFP.2.13.0.pack
+                Keil.STM32F4xx_DFP.2.13.0
+                STMicroelectronics STM32F4 Series Device Support, Drivers and Examples
+
+<h2>Collection of Component include folders:</h2>
+  .\RTE\_pianoCtr
+  C:\Keil_v5\ARM\PACK\ARM\CMSIS\5.4.0\CMSIS\Core\Include
+  C:\Keil_v5\ARM\PACK\Keil\STM32F4xx_DFP\2.13.0\Drivers\CMSIS\Device\ST\STM32F4xx\Include
+
+<h2>Collection of Component Files used:</h2>
+
+   * Component: ARM::CMSIS:CORE:5.1.2
+Build Time Elapsed:  00:00:41
+</pre>
+</body>
+</html>

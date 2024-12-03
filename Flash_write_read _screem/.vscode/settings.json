@@ -1,0 +1,10 @@
+{
+    "files.associations": {
+        "*.m": "matlab",
+        "*.py": "python",
+        "stm32f4xx_hal.h": "c",
+        "app_piano.h": "c",
+        "mcu_bsp.h": "c",
+        "pca9685.h": "c"
+    }
+}
